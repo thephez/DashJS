@@ -13,10 +13,7 @@
         ]
       }
     ],
-    "required": [
-      "toUserId",
-      "publicKey"
-    ],
+    "required": ["toUserId", "publicKey"],
     "properties": {
       "toUserId": {
         "type": "string"
@@ -38,10 +35,7 @@
         ]
       }
     ],
-    "required": [
-      "avatarUrl",
-      "about"
-    ],
+    "required": ["avatarUrl", "about"],
     "properties": {
       "about": {
         "type": "string"

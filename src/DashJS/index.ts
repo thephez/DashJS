@@ -1,1 +1,1 @@
-export { DashJS } from './DashJS';
+export { DashJS } from "./DashJS";

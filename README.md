@@ -5,7 +5,6 @@
 
 > Dash library for JavaScript/TypeScript ecosystem (Wallet, DAPI, Primitives, BLS, ...)
 
-
 ## Table of Contents
 
 - [State](#state)
@@ -36,33 +35,36 @@ Having [NodeJS](https://nodejs.org/) installed, just type : `npm install @dashev
 ## Usage
 
 ```js
-import DashJS from "@dashevo/dashjs"; 
+import DashJS from "@dashevo/dashjs";
 //const DashJS = require('../build/index'); for es5
 import schema from "./schema.json"; // If you want to interact with L2 (DPA)
 
 const network = "testnet";
 const opts = {
-    network,
-    mnemonic: "arena light cheap control apple buffalo indicate rare motor valid accident isolate",
-    schema
+  network,
+  mnemonic:
+    "arena light cheap control apple buffalo indicate rare motor valid accident isolate",
+  schema
 };
 const sdk = new DashJS.SDK(opts);
 const acc = sdk.wallet.getAccount();
-async function sendPayment(){
-    const tx = await acc.createTransaction({recipient:{address:'yLptqWxjgTxtwKJuLHoGY222NnoeqYuN8h', amount:0.12}})
-    console.log(tx)
+async function sendPayment() {
+  const tx = await acc.createTransaction({
+    recipient: { address: "yLptqWxjgTxtwKJuLHoGY222NnoeqYuN8h", amount: 0.12 }
+  });
+  console.log(tx);
 }
 
 async function readDocument() {
-    const profile = await sdk.platform.fetchDocuments('profile',{},opts)
-    console.log(profile);
+  const profile = await sdk.platform.fetchDocuments("profile", {}, opts);
+  console.log(profile);
 }
 ```
 
-Notes : 
+Notes :
 
 - Omitting mnemonic will set the Wallet functionalities in offlineMode (for resources savings purposes) and set a default mnemonic.  
- You can use `sdk.wallet.exportWallet()` to get the randomly generated mnemonic.
+  You can use `sdk.wallet.exportWallet()` to get the randomly generated mnemonic.
 - Omitting a schema will unset the Platform functionalities.
 
 ## Platform

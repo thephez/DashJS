@@ -1,7 +1,7 @@
-import { SDK as _SDK} from './SDK';
+import { SDK as _SDK } from "./SDK";
 
 export namespace DashJS {
-    export let SDK = _SDK
+  export let SDK = _SDK;
 }
 
 export { DashJS as default };
