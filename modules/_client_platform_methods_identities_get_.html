@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;Client/Platform/methods/identities/get&quot; | dash</title>
-	<meta name="description" content="Documentation for dash">
+	<title>&quot;Client/Platform/methods/identities/get&quot; | Dash JavaScript SDK - v3.0.2</title>
+	<meta name="description" content="Documentation for Dash JavaScript SDK - v3.0.2">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">dash</a>
+					<a href="../index.html" class="title">Dash JavaScript SDK - v3.0.2</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/thephez/DashJS/blob/1ece1af/src/SDK/Client/Platform/methods/identities/get.ts#L10">Client/Platform/methods/identities/get.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/thephez/DashJS/blob/5f61e02/src/SDK/Client/Platform/methods/identities/get.ts#L23">Client/Platform/methods/identities/get.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -110,12 +110,40 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>id</p>
+										<p>id of an identity</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>identites</p>
+							<p>identites (or <code>null</code> if non-existent)</p>
+							<a href="#-from-existing-dashjs-comment" id="-from-existing-dashjs-comment" style="color: inherit; text-decoration: none;">
+								<h2>^^^ From existing DashJS comment</h2>
+							</a>
+							<hr>
+							<p><strong>Embedded TypeDoc Sample Code</strong>:</p>
+							<pre><code class="language-javascript"><span class="hljs-keyword">await</span> client.platform.identities.get(<span class="hljs-string">'3GegupTgRfdN9JMS8R6QXF3B2VbZtiw63eyudh1oMJAk'</span>)</code></pre>
+							<hr>
+							<p><strong><code>include</code> TypeDoc Example (get.md)</strong>:</p>
+							<p><strong>Usage</strong>: <code>client.platform.identities.get(identityId)</code><br><strong>Description</strong>: This method will allow you to fetch back an identity from it&#39;s id. </p>
+							<p>Parameters: </p>
+							<table>
+								<thead>
+									<tr>
+										<th>parameters</th>
+										<th>type</th>
+										<th>required</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+								<tbody><tr>
+										<td><strong>identifier</strong></td>
+										<td>string</td>
+										<td>yes</td>
+										<td>Will fetch back the identity matching the identifier</td>
+									</tr>
+							</tbody></table>
+							<p><strong>Example</strong>: <code>await client.platform.identities.get(&#39;3GegupTgRfdN9JMS8R6QXF3B2VbZtiw63eyudh1oMJAk&#39;)</code></p>
+							<p>Returns : Identity (or <code>null</code> if do not exist).</p>
 						</li>
 					</ul>
 				</section>
