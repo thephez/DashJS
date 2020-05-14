@@ -15,7 +15,7 @@
     "test": "npm run test:ts && npm run build:prod && npm run test:js",
     "test:ts": "mocha -r ts-node/register \"src/**/*.spec.ts\"",
     "test:js": "mocha --recursive tests/**/*.js",
-    "build:doc": "typedoc --exclude '**/*+(index|.spec|.e2e).ts'  --out tdoc src/"
+    "build:doc": "typedoc --exclude '**/*+(index|.spec|.e2e).ts' --includes docs/ --out tdoc src/ --name 'Dash JavaScript SDK' --includeVersion"
   },
   "repository": {
     "type": "git",
