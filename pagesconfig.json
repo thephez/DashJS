@@ -1,0 +1,148 @@
+{
+    "groups": [
+        {
+            "title": "Getting Started",
+            "pages": [
+                {
+                    "title": "Quick start",
+                    "source": "docs/getting-started/quickstart.md"
+                },
+                {
+                    "title": "Quick introduction to core concepts",
+                    "source": "docs/getting-started/core-concepts.md"
+                },
+                {
+                    "title": "Working with multiple apps",
+                    "source": "docs/getting-started/multiple-apps.md"
+                },
+                {
+                    "title": "Dash Platform Applications",
+                    "source": "docs/getting-started/dash-platform-applications.md"
+                },
+                {
+                    "title": "About Schemas",
+                    "source": "docs/getting-started/about-schemas.md"
+                },
+                {
+                    "title": "With TypeScript",
+                    "source": "docs/getting-started/with-typescript.md"
+                }
+            ]
+        },
+        {
+            "title": "Examples",
+            "pages": [
+                {
+                    "title": "Generate a mnemonic",
+                    "source": "docs//examples/generate-a-new-mnemonic.md"
+                },
+                {
+                    "title": "Receive money and display balance",
+                    "source": "docs//examples/receive-money-and-check-balance.md"
+                },
+                {
+                    "title": "Pay to another address",
+                    "source": "docs//examples/pay-to-another-address.md"
+                },
+                {
+                    "title": "Use a local evonet",
+                    "source": "docs//examples/use-local-evonet.md"
+                },
+                {
+                    "title": "Fetch an identity from its name",
+                    "source": "docs//examples/fetch-an-identity-from-its-name.md"
+                },
+                {
+                    "title": "Publishing a new contract",
+                    "source": "docs//examples/publishing-a-new-contract.md"
+                },
+                {
+                    "title": "Use another BIP44 account",
+                    "source": "docs//examples/use-different-account.md"
+                },
+                {
+                    "title": "Sign and verify messages",
+                    "source": "docs//examples/sign-and-verify-messages.md"
+                }
+            ]
+        },
+        {
+            "title": "Usage",
+            "pages": [
+                {
+                    "title": "DAPI",
+                    "source": "docs/usage/dapi.md"
+                },
+                {
+                    "title": "Platform",
+                    "source": "docs/platform/about-platform.md"
+                },
+                {
+                    "title": "Identities",
+                    "source": "docs/platform/identities/about-identity.md",
+                    "children": [
+                        {
+                            "title": "`.get()`",
+                            "source": "docs/platform/identities/get.md"
+                        },
+                        {
+                            "title": "`.register()`",
+                            "source": "docs/platform/identities/register.md"
+                        }
+                    ]
+                },
+                {
+                    "title": "Contracts",
+                    "source": "docs/platform/contracts/about-contracts.md",
+                    "children": [
+                        {
+                            "title": "`.get()`",
+                            "source": "docs/platform/contracts/get.md"
+                        },
+                        {
+                            "title": "`.create()`",
+                            "source": "docs/platform/contracts/create.md"
+                        },
+                        {
+                            "title": "`.broadcast()`",
+                            "source": "docs/platform/contracts/broadcast.md"
+                        }
+                    ]
+                },
+                {
+                    "title": "Documents",
+                    "source": "docs/platform/documents/get.md",
+                    "children": [
+                        {
+                            "title": "`.get()`",
+                            "source": "docs/platform/documents/get.md"
+                        },
+                        {
+                            "title": "`.create()`",
+                            "source": "docs/platform/documents/create.md"
+                        },
+                        {
+                            "title": "`.broadcast()`",
+                            "source": "docs/platform/documents/broadcast.md"
+                        }
+                    ]
+                },
+                {
+                    "title": "Names",
+                    "source": "docs/platform/names/about-dpns.md",
+                    "children": [
+                        {
+                            "title": "`.get()`",
+                            "source": "docs/platform/names/get.md"
+                        },
+                        {
+                            "title": "`.register()`",
+                            "source": "docs/platform/names/register.md"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "output": "pages"
+}
